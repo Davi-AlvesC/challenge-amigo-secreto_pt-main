@@ -150,16 +150,67 @@ ul {
     padding-left: 20px;
 }
 
+/*[class^="icon-"], [class*=" icon-"] {
+    display: inline-block;
+    width: 100%;
+}
+*/
+
 li {
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
     background-color: #FFFFFF;
-    border: 1px solid #000;
+    border: 2px solid #000;
+    border-radius: 10px;
     height: 75%;
+    min-height: 312.28px;
     width: 200px;
     min-width: 200px;
+}
+
+li:hover {
+    border: 2px solid #ce2c2c;
+
+    .trash{
+        visibility:visible;
+    }
+
+    .texto-card{
+        visibility:hidden;
+    }
+    
+}
+
+.trash{
+    position: absolute;
+    color: #ce2c2c;
+    transform: scale(2,2);
+    text-align:center;
+    visibility:hidden;
+}
+
+.naipeTopo{
+    position: absolute;
+    color: #000000;
+    transform: scale(2,2);
+    align-self: normal;
+    justify-self: right;
+    justify-items: right;
+    justify-content: right;
+}
+
+.texto-card{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: "Merriweather", serif;
+    font-weight: 800;
+    word-break: break-word;
+    color: #000;
 }
 
 .result-list {
