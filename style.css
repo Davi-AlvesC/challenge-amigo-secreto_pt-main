@@ -157,7 +157,10 @@ ul {
 */
 
 li {
-    display: flex;
+    display: grid;
+    position: relative;
+    grid-template-rows: 20% 60% 20%;
+    grid-template-columns: 200px;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -168,6 +171,7 @@ li {
     min-height: 312.28px;
     width: 200px;
     min-width: 200px;
+    cursor: pointer;
 }
 
 li:hover {
@@ -180,6 +184,14 @@ li:hover {
     .texto-card{
         visibility:hidden;
     }
+
+    .naipeVisible{
+        visibility:hidden;
+    }
+
+    .naipeHidden{
+        visibility:visible;
+    }
     
 }
 
@@ -187,22 +199,58 @@ li:hover {
     position: absolute;
     color: #ce2c2c;
     transform: scale(2,2);
-    text-align:center;
     visibility:hidden;
+    margin-left: 90px;
 }
 
-.naipeTopo{
+.naipeVisible{
     position: absolute;
+    visibility:visible;
     color: #000000;
     transform: scale(2,2);
-    align-self: normal;
-    justify-self: right;
-    justify-items: right;
-    justify-content: right;
+    height: 20px;
+    width: 20px;
+    margin-left: 20px;
+}
+
+.coroaScale{
+    transform: scale(1.75,1.75) !important;
+}
+
+.coroaScaleBaixo{
+    transform: rotate(180deg)  scale(1.75,1.75) !important;
+}
+
+.opaco{
+    opacity: 40%;
+}
+
+.naipeHidden{
+    position: absolute;
+    color: #ce2c2c;
+    visibility:hidden;
+    transform: scale(2,2);
+    height: 20px;
+    width: 20px;
+    margin-left: 20px;
+}
+
+.naipeBaixo{
+    transform: rotate(180deg)  scale(2,2);
+    margin-left: 160px;
+}
+
+
+.flexCenter {
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
 .texto-card{
-    width: 80%;
+    height: 140px;
+    margin: 20px;
+    width: 160px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -214,11 +262,24 @@ li:hover {
 }
 
 .result-list {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
     margin-top: 15px;
-    color: #05DF05;
+    color: #DBAC34;
     font-size: 22px;
     font-weight: bold;
     text-align: center;
+}
+
+.bordaDourado {
+    border: 2px solid #DBAC34;
+    pointer-events: none;
+}
+
+.corDourada {
+    color: #DBAC34;
 }
 
 /* Botão de sortear título */
