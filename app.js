@@ -86,7 +86,9 @@ function criaDiv() {
 // Função para remover um amigo da lista ao clicar no card
 function removerAmigo(item) {
     // Remover o item da lista
-    amigos.splice(amigos.indexOf(item.querySelector('a').innerHTML), 1);
+    if (item.className != 'bordaDourado opaco'){
+        amigos.splice(amigos.indexOf(item.querySelector('a').innerHTML), 1);
+    }
     item.remove();
 }
 
