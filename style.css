@@ -19,7 +19,7 @@ body {
     height: 100vh;
     /*background: linear-gradient(90deg, rgba(8,85,39,1) 0%, rgba(16,146,60,1) 50%, rgba(8,86,34,1) 100%);*/
     /*background: repeating-linear-gradient(-45deg, rgba(8,85,39,1), rgba(8,85,39,1) 1px, transparent 1px, transparent 6px);*/
-    background:url('./assets/tecido_verde_fundo.JPG') repeat;
+    background:url('assets/tecido_verde_fundo.JPG') repeat;
     background-size: 400px 400px;
     display: flex;
     justify-content: center;
@@ -46,7 +46,7 @@ body {
 .input-section {
     flex: 30%;
     background-color: var(--color-secondary);
-    background: url('./assets/marmore_fundo.JPG')  no-repeat center center fixed;
+    background: url('assets/marmore_fundo.JPG')  no-repeat center center fixed;
     background-size: cover;
     border-radius: 64px 64px 0 0;
     display: flex;
@@ -61,7 +61,7 @@ body {
 .cards-section {
     flex: 45%;
     background-color: var(--color-secondary);
-    background: url('./assets/marmore_fundo.JPG')  no-repeat center center fixed;
+    background: url('assets/marmore_fundo.JPG')  no-repeat center center fixed;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -75,7 +75,7 @@ body {
     font-family: "Merriweather", serif;
     font-weight: 600;
     color: transparent;
-    background: url('./assets/marmore_fundo_titulo.JPG');
+    background: url('assets/marmore_fundo_titulo.JPG');
     background-repeat: repeat;
     background-size: 50px;
     color: transparent;
