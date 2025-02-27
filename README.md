@@ -21,7 +21,7 @@ O layout do site foi inspirado em **jogos de cartas de baralho**, como o Paciên
 - **Cartas dinâmicas**: Os nomes adicionados à lista aparecem como **cartas**, alinhadas da esquerda para a direita, cada uma com um **naipe aleatório** gerado por JavaScript.  
 - **Efeito visual no sorteio**:  
   - Quando um nome é sorteado, a carta muda de cor para indicar que já foi selecionada.  
-  - Caso um novo sorteio seja realizado, as cartas anteriormente sorteadas ficam **opacas**, sinalizando ao usuário que foram removidas.  
+  - Caso um novo sorteio seja realizado, as cartas anteriormente sorteadas ficam **opacas**, sinalizando ao usuário que foram removidas de futuros sorteios.  
 - **Interatividade**: O usuário pode clicar tanto em cartas sorteadas quanto não sorteadas para removê-las da lista.  
 
 ## ⚙️ Funcionalidades  
