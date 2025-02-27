@@ -4,6 +4,8 @@ Este projeto consiste em um sorteio de amigo secreto desenvolvido com **HTML, CS
 
 O desafio original fornecia uma base pronta em **HTML e CSS**, mas o projeto foi **totalmente reformulado** para simular um **sorteio com cartas de baralho tradicionais**, incluindo **naipes pseudoaleatórios** gerados dinamicamente com JavaScript. Essa abordagem mantém a essência do desafio, ao mesmo tempo que adiciona um toque visual diferenciado e interativo.  
 
+🔗 **Acesse o projeto em funcionamento aqui:** [Challenge Amigo Secreto](https://davi-alvesc.github.io/challenge-amigo-secreto_pt-main/)
+
 ## 🖱️ GIF da interação  <br>
 
 <p align="center">
