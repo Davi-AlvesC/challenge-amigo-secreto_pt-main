@@ -5,7 +5,6 @@ function adicionarAmigo() {
     if (nomeAtual != null && nomeAtual != '') {
         amigos.push(nomeAtual);
         document.getElementById('amigo').value = '';
-        console.log(amigos);
         atualizarLista(nomeAtual)
     }
     else {
@@ -97,9 +96,6 @@ let sorteadoAnterior;
 function sortearAmigo() {
     if (amigos.length > 0){
         let sorteado = gerarNumeroAleatorio(amigos.length) - 1
-        console.log('sorteou');
-        console.log(amigos[sorteado]);
-
         if (sorteadoAnterior != null) {
             sorteadoAnterior.classList.add('opaco');
         }
@@ -138,6 +134,5 @@ function sortearAmigo() {
 }
 
 function gerarNumeroAleatorio(maximo) {
-    console.log(Math.floor((Math.random() * maximo + 1)))
     return Math.floor((Math.random() * maximo + 1))
 }
